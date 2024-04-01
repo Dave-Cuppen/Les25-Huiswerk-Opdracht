@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="stijl.css">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+            $("#Verzend").click(function() {
+            var naam = $("#Voornaam").val();
+            window.alert("Hallo " + naam +", uw gegevens zijn verzonden!");
+            });
+            $("img").click(function(){
+            $(".profielfoto").animate({
+            height: '400px',
+            width: '400px'
+            });
+            });
+            })
+        </script>
+        <title>Mijn huiswerkopdracht voor Les 25</title>
+    </head>
+    <body>
+        <div class="container-sm">
+            <div class="row">
+                <h1>Welkom op mijn pagina!</h1>
+                <p class="intro">Hier kunt u mijn opdracht voor Les 25 bekijken.</p>
+                <div class="col-12">
+                    <img class="profielfoto" src="profielfoto.png" alt="Profielfoto">
+                </div>
+                <!-- Wie ben ik -->
+                <div id="wie-ben-ik">
+                    <h2>Wie ben ik?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem vel arcu placerat gravida lobortis malesuada neque. Ut sagittis felis leo, vitae ultrices tellus tempus sed. Aliquam id faucibus dui. Vestibulum eget erat id sem posuere mattis. Pellentesque tempus efficitur nibh, ac finibus lorem blandit non. Ut et est sit amet nulla maximus viverra. Curabitur porttitor sodales quam convallis ullamcorper. Aenean id justo ac metus rhoncus porta. Morbi condimentum sit amet felis ut fringilla. Mauris non blandit elit, vel sollicitudin ex. In odio est, pellentesque aliquam dignissim suscipit, sagittis sit amet mi. Quisque vel commodo augue. Suspendisse volutpat lacus non eros volutpat rhoncus. Morbi quis ultrices arcu.</p>
+                </div>
+                <hr>
+                <!-- Wat doe ik -->
+                <div id="wat-doe-ik">
+                    <h2>Wat doe ik?</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem vel arcu placerat gravida lobortis malesuada neque. Ut sagittis felis leo, vitae ultrices tellus tempus sed. Aliquam id faucibus dui. Vestibulum eget erat id sem posuere mattis. Pellentesque tempus efficitur nibh, ac finibus lorem blandit non. Ut et est sit amet nulla maximus viverra. Curabitur porttitor sodales quam convallis ullamcorper. Aenean id justo ac metus rhoncus porta. Morbi condimentum sit amet felis ut fringilla. Mauris non blandit elit, vel sollicitudin ex. In odio est, pellentesque aliquam dignissim suscipit, sagittis sit amet mi. Quisque vel commodo augue. Suspendisse volutpat lacus non eros volutpat rhoncus. Morbi quis ultrices arcu.</p>
+                </div>
+                <hr>
+                <!-- Contactformulier -->
+                <div id="contact-met-mij">
+                    <h2>Neem contact met mij op!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non sem vel arcu placerat gravida lobortis malesuada neque.</p>
+                    <form id="contactformulier" name="contactformulier" method="post">
+                        <div class="formuliergroep row">
+                            <label for="Voornaam" class="col-sm-3 col-form-label">Voornaam</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="Voornaam" placeholder="Uw Voornaam">
+                            </div>
+                        </div>
+                        <div class="formuliergroep row">
+                            <label for="Achternaam" class="col-sm-3 col-form-label">Achternaam</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="Achternaam" placeholder="Uw Achternaam">
+                            </div>
+                        </div>
+                        <div class="formuliergroep row">
+                            <label for="Adres" class="col-sm-3 col-form-label">Adres</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="Adres" placeholder="Uw Adres">
+                            </div>
+                        </div>
+                        <div class="formuliergroep row">
+                            <label for="Postcode" class="col-sm-3 col-form-label">Postcode</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="Postcode" placeholder="Uw Postcode">
+                            </div>
+                        </div>
+                        <div class="formuliergroep row">
+                            <label for="Woonplaats" class="col-sm-3 col-form-label">Woonplaats</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="Woonplaats" placeholder="Uw Woonplaats">
+                            </div>
+                        </div>
+                        <div class="formuliergroep row">
+                            <label for="Telefoonnummer" class="col-sm-3 col-form-label">Telefoonnummer</label>
+                            <div class="col-sm-9">
+                                <input type="tel" class="form-control" id="Telefoonnummer" placeholder="Uw Telefoonnummer">
+                            </div>
+                        </div>
+                        <div class="formuliergroep row">
+                            <label for="Emailadres" class="col-sm-3 col-form-label">Emailadres</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="Emailadres" placeholder="Uw Emailadres">
+                            </div>
+                        </div>
+                        <button type="submit" id="Verzend" class="btn btn-primary">Verzenden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <noscript>Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.</noscript>
+    </body>
+</html>

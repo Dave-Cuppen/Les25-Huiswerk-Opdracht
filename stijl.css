@@ -1,0 +1,57 @@
+body {
+    margin: 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: #9ae7ff;
+}
+
+.container-sm {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #00a2ff;
+}
+
+img {
+    border: 1px solid #006d8f;
+    border-radius: 4px;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+}
+
+#wie-ben-ik {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#wat-doe-ik {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact-met-mij {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactformulier {
+    text-align: left;
+}
+
+.formuliergroep {
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 30px;
+}
